@@ -5,24 +5,24 @@ Protoypes of, and thinking about, Services and User Journeys for Developing, sel
 
 ## Developing land
 
-I'm a developer and i want to check my plans to develop land into homes for sale.
+I'm a developer and I want to check my plans to develop land into homes for sale.
 
-I'm a developer and i've updated my plans for the development/properties i'm building.
+I'm a developer and I've updated my plans for the development/properties I'm building.
 
 
 ## Selling properties
 
-I'm a developer and i'm ready to sell properties
+I'm a developer and I'm ready to sell properties
 
 
 ## Buying a property - making my mind up
 
-I'm a buyer and i'm considering properties
+I'm a buyer and I'm considering properties
 
 
-## Buying a property - commiting
+## Buying a property - committing
 
-I'm a buyer and i'm ready to buy a property
+I'm a buyer and I'm ready to buy a property
 
 
 
