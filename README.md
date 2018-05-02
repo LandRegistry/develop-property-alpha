@@ -3,27 +3,29 @@
 Protoypes of, and thinking about, Services and User Journeys for Developing, selling, and buying 'new build' homes in England and Wales.
 
 
-## Developing land
+## Developing land and properties
 
 I'm a developer and I want to check my plans to develop land into homes for sale.
 
 I'm a developer and I've updated my plans for the development/properties I'm building.
 
-
-## Selling properties
+I'm a developer and I want to be notified if something is a problem.
 
 I'm a developer and I'm ready to sell properties
 
 
-## Buying a property - making my mind up
+## Buying a property
 
 I'm a buyer and I'm considering properties
 
-
-## Buying a property - committing
+I'm a buyer and I want to be notified if something changes
 
 I'm a buyer and I'm ready to buy a property
 
+
+## HM Land Registry
+
+Will a development plan/the development result in registrable properties?
 
 
 ## Adding to this protoype
