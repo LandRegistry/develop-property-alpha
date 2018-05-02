@@ -22,10 +22,16 @@ I'm a buyer and I want to be notified if something changes
 
 I'm a buyer and I'm ready to buy a property
 
-
 ## HM Land Registry
 
 Will a development plan/the development result in registrable properties?
+
+
+
+## Viewing the protoypes.
+
+Contact a member of the team - e.g. look at the github history (people external to HMLR), or [Sharepoint](https://landregistryuk.sharepoint.com/sites/NewBuildsDiscovery) (HMLR colleagues) to get the username and password to [view the prototypes](https://develop-property-alpha.herokuapp.com)
+
 
 
 ## Adding to this protoype
