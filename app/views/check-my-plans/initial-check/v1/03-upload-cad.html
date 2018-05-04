@@ -8,11 +8,88 @@
   Check housing development plan
 {% endblock %}
 
+<style type="text/css">
+
+
+form {
+  width: 600px;
+  background: #ccc;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+form ol {
+  padding-left: 0;
+}
+
+form li, div > p {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border: 1px solid black;
+}
+
+form img {
+  height: 64px;
+  order: 1;
+}
+
+form p {
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+form label, form button {
+  background-color: #7F9CCB;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: auto;
+}
+
+form label:hover, form button:hover {
+  background-color: #2D5BA3;
+  color: white;
+}
+
+form label:active, form button:active {
+  background-color: #0D3F8F;
+  color: white;
+}
+
+</style>
+
 {% block content %}
 <main id="content" role="main">
 
   <div class="grid-row">
     <div class="column-two-thirds">
+
+
+      <h1 class="heading-xlarge">
+          Upload CAD estate layout
+      </h1>
+      <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
+
+      <form id="file-selector" method="get" enctype="multipart/form-data">
+        <div>
+          <label for="cad_uploads">Choose CAD files (DXF, DWG)</label>
+          <input type="file" id="cad_uploads" name="image_uploads" accept=".dxf, .dwg" multiple>
+        </div>
+        <div class="preview">
+          <p>No files currently selected for upload</p>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+      </form>
+
+
 
       <form action="" method="get" class="form">
 
@@ -33,5 +110,8 @@
 
     </div>
   </div>
+
+
+
 </main>
 {% endblock %}
