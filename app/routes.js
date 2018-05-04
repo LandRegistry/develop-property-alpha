@@ -28,5 +28,20 @@ router.get('/check-my-plans/initial-check/v1/03-upload-cad', function (req, res)
   }
 })
 
+// Precedednt deeds data routing
+
+router.get('/check-my-plans/initial-check/v1/05-upload-deeds', function (req, res) {
+  // get the answer from the query string (eg. ?hasCAD=false)
+  var hasDeeds = req.query.hasDeeds
+
+  if (hasDeeds === 'false') {
+    // redirect to the relevant page
+    res.redirect('/check-my-plans/initial-check/v1/05-no-deeds')
+  } else {
+    // if hasCAD is any other value (or is missing) render the page requested
+    res.render('check-my-plans/initial-check/v1/05-upload-deeds')
+  }
+})
+
 
 module.exports = router

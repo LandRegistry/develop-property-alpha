@@ -14,7 +14,7 @@
 
 <style type="text/css">
 
-#cad_uploads {
+#deed_uploads {
   margin-top: 25px;
 }
 
@@ -32,17 +32,17 @@
 
 
       <h1 class="heading-xlarge">
-          Upload CAD estate layout
+        Upload precedent deeds
       </h1>
       <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
 
-      <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/initial-check/v1/04-precedent-deeds">
+      <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/initial-check/v1/06-contact-email">
         <div>
-          <label class="bold" for="cad_uploads">Choose CAD files (DXF, DWG)</label>
-          <input type="file" id="cad_uploads" name="cad_uploads" accept=".dxf, .dwg" multiple>
+          <label class="bold" for="deed_uploads">Choose files</label>
+          <input type="file" id="deed_uploads" name="deed_uploads" multiple>
         </div>
         <div class="preview">
-          <p>No CAD files currently selected for upload</p>
+          <p>No deeds currently selected for upload</p>
         </div>
 
         <div class="form-group">
