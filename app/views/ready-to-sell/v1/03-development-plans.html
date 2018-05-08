@@ -1,0 +1,127 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h2 class="heading-large">Development plans</h2>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="error-summary" role="alert" aria-labelledby="error-unregistrable" tabindex="-1">
+
+        <h2 class="heading-medium error-summary-heading" id="error-unregistrable">
+          Unregistrable plots
+        </h2>
+
+        <ul class="error-summary-list">
+          <li><a href="#">Some of the plots are currently incapable of registration</a></li>
+        </ul>
+
+      </div>
+
+      <h1 class="heading-large">
+        Estate plan
+      </h1>
+
+      <p>Created for the registrtion of new titles, from the estate layout of 20 Feruary 2018</p>
+
+
+      <h1 class="heading-large">
+        Plot plans
+      </h1>
+
+      <p>
+        <a href="09-estate-plan">Estate layout received by HM Land Registry 20 February 2018.</a>
+      </p>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-full">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Plot</th>
+              <th scope="col">Address</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="#">Plot 1</a></th>
+              <td >Unknown</td>
+              <td ><font color="red">unregistrable, extent falls outside DN749266</font></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 2</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 3</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 4</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 5</a></th>
+              <td >10 Gardinia Way</td>
+              <td >SELLER READY</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 6</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="04-plot-view">Plot 7</a></th>
+              <td >14 Gardinia Way</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 8</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 9</a></th>
+              <td >Unknown</td>
+              <td >registrable</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 10</a></th>
+              <td >20 Gardinia Way</td>
+              <td >BUYER READY</td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="#">Plot 11</a></th>
+              <td >Unknown</td>
+              <td >SELLER READY</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+  </div>
+
+</main>
+
+{% endblock %}
