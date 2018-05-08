@@ -38,8 +38,24 @@ router.get('/check-my-plans/initial-check/v1/05-upload-deeds', function (req, re
     // redirect to the relevant page
     res.redirect('/check-my-plans/initial-check/v1/05-no-deeds')
   } else {
-    // if hasCAD is any other value (or is missing) render the page requested
+    // if hasDeeds is any other value (or is missing) render the page requested
     res.render('check-my-plans/initial-check/v1/05-upload-deeds')
+  }
+})
+
+
+// Precedednt deeds data routing
+
+router.get('/check-my-plans/initial-check/v1/09-conveyancer', function (req, res) {
+  // get the answer from the query string (eg. ?hasCAD=false)
+  var hasConv = req.query.hasConv
+
+  if (hasConv === 'false') {
+    // redirect to the relevant page
+    res.redirect('/check-my-plans/initial-check/v1/10-check-answers')
+  } else {
+    // if hasConv is any other value (or is missing) render the page requested
+    res.render('check-my-plans/initial-check/v1/09-conveyancer')
   }
 })
 
