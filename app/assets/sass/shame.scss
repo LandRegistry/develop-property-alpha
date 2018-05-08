@@ -114,10 +114,9 @@ $gutter-two-thirds: $gutter - $gutter-one-third;
 }
 
 
-// Estate page
+// global image fix for our oversize images
 
-
-.estate-location img {
+img {
 	max-width: 100%;
 	vertical-align: top;
 }
