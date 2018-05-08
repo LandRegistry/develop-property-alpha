@@ -121,6 +121,11 @@ img {
 	vertical-align: top;
 }
 
+// estate
+
+img.map {
+	border:1px solid #a1acb2;
+}
 
 // estate list
 
@@ -143,6 +148,32 @@ img {
 	float:right;
 	text-align: right; 
 	font-size:80%;
+}
+
+
+// development plans
+
+.plot-list .column-status {
+	
+}
+
+.plot-list .column-plot {
+	width:15%;
+}
+
+.plot-list .column-address {
+	width:25%;
+}
+
+.plot-list .column-status {
+	width:60%;
+}
+
+
+// plot page
+
+.registrability-panel {
+	margin-top:60px;
 }
 
 
