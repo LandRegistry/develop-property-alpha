@@ -120,3 +120,30 @@ img {
 	max-width: 100%;
 	vertical-align: top;
 }
+
+
+// estate list
+
+.estate-list li {
+	border-top:1px solid #a1acb2;
+	margin-bottom:60px;
+}
+
+.estate-list li h3 {
+	margin-top:25px;
+}
+
+.estate-list div.developer {
+	width:80%; 
+	float:left;
+}
+
+.estate-list div.date {
+	width:20%; 
+	float:right;
+	text-align: right; 
+	font-size:80%;
+}
+
+
+
