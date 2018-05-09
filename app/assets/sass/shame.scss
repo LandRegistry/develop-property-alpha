@@ -140,14 +140,14 @@ img.map {
 }
 
 .estate-list div.developer {
-	width:80%; 
+	width:80%;
 	float:left;
 }
 
 .estate-list div.date {
-	width:20%; 
+	width:20%;
 	float:right;
-	text-align: right; 
+	text-align: right;
 	font-size:80%;
 }
 
@@ -155,7 +155,7 @@ img.map {
 // development plans
 
 .plot-list .column-status {
-	
+
 }
 
 .plot-list .column-plot {
@@ -177,6 +177,31 @@ img.map {
 	margin-top:60px;
 }
 
+//.estate-location
+.estate-location {
+    margin-top:45px;
+    text-align: right;
+}
 
+.estate-location img {
+    display: block;
+    margin-left:auto;
+}
 
+//'lozange' highlighting
+.lozange {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight:800;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
 
+.green {
+  background-color: #00823B;
+}
+
+.orange {
+  background-color: #FFBF47;
+}
