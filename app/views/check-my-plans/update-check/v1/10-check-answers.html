@@ -16,13 +16,13 @@
       <!-- <a href="#" class="link-back">Back</a> -->
 
       <h1 class="heading-large">
-        Check your answers before submitting your development plans
+        Development plans: Westway Estate Phase 2
       </h1>
 
 
       <!-- only add a heading for a list if there is more than one list -->
       <h2 class="heading-medium">
-        Plan details
+        Development name
       </h2>
 
       <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
@@ -30,8 +30,6 @@
       <!--   * `cya-questions-long` for long questions -->
       <!--   * none for single group of q&a -->
       <dl class="govuk-check-your-answers cya-questions-short">
-
-<!--    need to add pages to collect development name and address     
         <div>
           <dt class="cya-question">
             Development name and address
@@ -40,17 +38,23 @@
             Westway Estate Phase 2<br />
             North Plymouth <br/>
             PL1 2HB
-            {{ data['estate-name'] }}
-            {{ data['estate-address'] }}
+            <!-- {{ data['estate-name'] }} -->
+            <!-- {{ data['estate-address'] }} -->
           </dd>
           <dd class="cya-change">
             <a href="#">
               Change<span class="visually-hidden"> development name and address</span>
             </a>
           </dd>
-        </div> -->
+        </div>
+      </dl>
 
 
+      <h2 class="heading-medium">
+        Plan details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
         <div>
           <dt class="cya-question">
             Estate layout files
@@ -60,7 +64,7 @@
             <!-- {{ data['cad_uploads'] }} -->
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="05-upload-cad">
               Change<span class="visually-hidden"> digital layout file</span>
             </a>
           </dd>
@@ -75,7 +79,7 @@
             <!-- {{ data['deed_uploads'] }} -->
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="06-upload-deeds">
               Change<span class="visually-hidden"> precedent deeds</span>
             </a>
           </dd>
@@ -98,7 +102,7 @@
             <!-- {{ data['email'] }} -->
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="07-contact-email">
               Change<span class="visually-hidden"> contact email</span>
             </a>
           </dd>
@@ -118,7 +122,7 @@
             <!-- {{ data['dev-address'] }} -->
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="08-developer">
               Change<span class="visually-hidden"> developer</span>
             </a>
           </dd>
@@ -137,7 +141,7 @@
             PL3 2ED
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="09-conveyancer">
               Change<span class="visually-hidden"> conveyancer</span>
             </a>
           </dd>

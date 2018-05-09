@@ -1,0 +1,40 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/check-my-plans/update-check/v1/08-developer" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+          Your details
+        </h1>
+
+        <p>We need an email address to send you the results of the plans check</p>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-control" id="email" type="text" name="email">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

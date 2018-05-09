@@ -14,25 +14,27 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <form action="/check-my-plans/initial-check/v1/05-upload-deeds" method="get" class="form">
+      <form action="/check-my-plans/update-check/v1/03-get-my-plans" method="get" class="form">
 
         <h1 class="heading-xlarge">
-          Do you have precedent deeds?
+          Revised plans?
         </h1>
+
+        <p>Is this your first time submitting plans for the development, or are you submitting revised plans for an existing development?</p>
 
         <div class="form-group">
           <fieldset class="">
 
-            <legend class="visuallyhidden">Do you have precedent deeds?</legend>
+            <legend class="visuallyhidden">new or revised plans for the development?</legend>
 
             <div class="multiple-choice">
-              <input id="DeedTrue" type="radio" name="hasDeed" value="true">
-              <label for="DeedTrue">Yes</label>
+              <input id="RevisedTrue" type="radio" name="RevisedPlans" value="true">
+              <label for="RevisedTrue">Revised plans for development</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="DeedFalse" type="radio" name="hasDeed" value="false">
-              <label for="DeedFalse">No</label>
+              <input id="RevisedFalse" type="radio" name="RevisedPlans" value="false">
+              <label for="RevisedFalse">First time submitting development plans</label>
             </div>
 
           </fieldset>
@@ -44,13 +46,6 @@
 
       </form>
 
-      <div class="panel panel-border-narrow">
-        <p>
-          If you don't have precedent deeds yet, you can give them to us later
-        </p>
-
-        <p><a href="">Guidance for deeds, file format and content</a></p>
-      </div>
 
     </div>
   </div>

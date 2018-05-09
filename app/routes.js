@@ -60,4 +60,27 @@ router.get('/check-my-plans/initial-check/v1/09-conveyancer', function (req, res
 })
 
 
+// /////////////////////////////////
+// Check Revised Development Plan V1
+// /////////////////////////////////
+
+// Revised plans or new plans - routing
+
+router.get('/check-my-plans/update-check/v1/03-get-my-plans', function (req, res) {
+  // get the answer from the query string (eg. ?hasCAD=false)
+  var RevisedPlans = req.query.RevisedPlans
+
+  if (RevisedPlans === 'false') {
+    // redirect to initial plans check flow
+    res.redirect('/check-my-plans/initial-check/v1/02-digital-layout')
+  } else {
+    // if RevisedPlans is any other value (or is missing) render the page requested
+    res.render('check-my-plans/update-check/v1/03-get-my-plans')
+  }
+})
+
+
+
+
+
 module.exports = router
