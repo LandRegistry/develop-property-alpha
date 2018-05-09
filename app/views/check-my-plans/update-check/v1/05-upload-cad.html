@@ -35,8 +35,12 @@
           Upload CAD estate layout
       </h1>
       <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
+      <h2 class="heading-medium">Current CAD estate layout files</h2> 
+      <p>{{ data['cad_uploads'] }}</p>
 
-      <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/initial-check/v1/04-precedent-deeds">
+      <h2 class="heading-medium">Upload new CAD file</h2>
+
+      <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/update-check/v1/06-upload-deeds">
         <div>
           <label class="bold" for="cad_uploads">Choose CAD files (DXF, DWG)</label>
           <input type="file" id="cad_uploads" name="cad_uploads" accept=".dxf, .dwg" multiple>

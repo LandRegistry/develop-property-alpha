@@ -89,7 +89,7 @@ router.get('/check-my-plans/update-check/v1/04-development-info', function (req,
   req.session.data['estate-address-2'] = "PL1 2HB";
   req.session.data['cad_uploads'] = "westway-estate.dxf";
   req.session.data['deed_uploads'] = "westway-new-title-deeds.pdf";
-  req.session.data['email'] = "graham.thomas@sandersonshomes.co.uk";
+  req.session.data['email'] = "graham.thomas@sandersonshomes.co.uk"
   req.session.data['dev-name'] = "Sanderson Homes";
   req.session.data['dev-address-1'] = "Alston Towers";
   req.session.data['dev-address-2'] = "North Alerton";

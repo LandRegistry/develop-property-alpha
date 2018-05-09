@@ -36,15 +36,17 @@
       </h1>
       <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
 
+      <h2 class="heading-medium">Current precedent deeds files</h2> 
       <p>{{ data['deed_uploads'] }}</p>
 
+      <h2 class="heading-medium">Upload new deed file</h2>
       <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/update-check/v1/07-contact-email">
         <div>
           <label class="bold" for="deed_uploads">Choose files</label>
           <input type="file" id="deed_uploads" name="deed_uploads" multiple>
         </div>
         <div class="preview">
-          <p>No deeds currently selected for upload</p>
+          <p>No new deeds currently selected for upload</p>
         </div>
 
         <div class="form-group">
