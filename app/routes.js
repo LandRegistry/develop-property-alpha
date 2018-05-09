@@ -79,6 +79,32 @@ router.get('/check-my-plans/update-check/v1/03-get-my-plans', function (req, res
   }
 })
 
+// set-up default data for 
+
+router.get('/check-my-plans/update-check/v1/04-development-info', function (req, res) {
+  // set up default data for submitted development
+
+  req.session.data['estate-name'] = "Westway Estate Phase 2";
+  req.session.data['estate-address-1'] = "North Plymouth";
+  req.session.data['estate-address-2'] = "PL1 2HB";
+  req.session.data['cad_uploads'] = "westway-estate.dxf";
+  req.session.data['deed_uploads'] = "westway-new-title-deeds.pdf";
+  req.session.data['email'] = "graham.thomas@sandersonshomes.co.uk";
+  req.session.data['dev-name'] = "Sanderson Homes";
+  req.session.data['dev-address-1'] = "Alston Towers";
+  req.session.data['dev-address-2'] = "North Alerton";
+  req.session.data['dev-address-3'] = "Derby";
+  req.session.data['dev-address-4'] = "DB1 3NB";
+  req.session.data['conv-name'] = "Barrow & Co Solicitors";
+  req.session.data['conv-address-1'] = "23 Hyde Park";
+  req.session.data['conv-address-2'] = "Plymouth";
+  req.session.data['conv-address-3'] = "PL3 2ED";
+
+  // render page
+  res.render('check-my-plans/update-check/v1/04-development-info')
+
+})
+
 
 
 
