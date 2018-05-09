@@ -21,6 +21,22 @@
 
 	<div class="grid-row">
 		<div class="column-two-thirds">
+	    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+	      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+	        Unregistrable plots
+	      </h2>
+
+	      <ul class="error-summary-list">
+	        <li><a href="#plot-plans">Some of the plots are currently incapable of registration</a></li>
+	      </ul>
+
+	    </div>
+	  </div>
+	</div>
+
+	<div class="grid-row">
+		<div class="column-two-thirds">
 			<h2 class="heading-large">
       	Estate plans
       </h2>
@@ -31,7 +47,7 @@
 
 	<div class="grid-row">
 		<div class="column-two-thirds">
-			<h2 class="heading-large">
+			<h2 class="heading-large" id="plot-plans">
       	Plot plans
       </h2>
       <p>Created for the registration of new titles, from the estate layout of 20 February 2018.</p>
@@ -51,9 +67,9 @@
 			  </thead>
 			  <tbody>
 			    <tr>
-			    	<th scope="row"><a href="">Plot 1</a></th>
+			    	<th scope="row"><a href="plot">Plot 1</a></th>
 			      <td>unknown</td>
-			      <td>registrable</td>
+			      <td><span style="color:#b10e1e; font-weight:800;">unregistrable, extent falls outside of title DN749266</span></td>
 			    </tr>
 			    <tr>
 			    	<th scope="row"><a href="">Plot 2</a></th>
@@ -80,7 +96,7 @@
 			      <td>registrable</td>
 			    </tr>
 			    <tr>
-			    	<th scope="row"><a href="plot">Plot 7</a></th>
+			    	<th scope="row"><a href="">Plot 7</a></th>
 			      <td>unknown</td>
 			      <td>registrable</td>
 			    </tr>
