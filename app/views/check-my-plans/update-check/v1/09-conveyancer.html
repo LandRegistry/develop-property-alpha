@@ -24,15 +24,15 @@
 
         <div class="form-group">
           <label class="form-label" for="conv-name">Conveyancer name</label>
-          <input class="form-control" id="conv-name" type="text" name="conv-name">
+          <input class="form-control" id="conv-name" type="text" name="conv-name" value="{{ data['conv-name'] }}">
         </div>
 
 
         <div class="form-group">
-          <label class="form-label" for="dev-address">
+          <label class="form-label" for="conv-address">
             Conveyancer address
           </label>
-          <textarea class="form-control form-control-3-4" name="conv-address" id="textarea" rows="5"></textarea>
+          <textarea class="form-control form-control-3-4" name="conv-address" id="conv-address" rows="5"></textarea>
         </div>
 
         <div class="form-group">
@@ -44,5 +44,11 @@
 
     </div>
   </div>
+
+<script>
+  var address = "{{ data['conv-address-1'] }}\n{{ data['conv-address-2'] }}\n{{ data['conv-address-3'] }}";
+  document.getElementById("conv-address").value = address;
+</script>
+
 </main>
 {% endblock %}
