@@ -1,0 +1,46 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/check-my-plans/update-check/v1/04-development-info" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+          Which development?
+        </h1>
+
+        <p>Use your contact email and development plans reference to access your development plans</p>
+
+        <div class="form-group">
+          <label class="form-label" for="username-email">Email address</label>
+          <input class="form-control" id="username-email" type="text" name="username-email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="plan-ref">Plan reference</label>
+          <span class="form-hint">This is the reference number sent to you when the plan was first submitted<br />for example: HDJ2123F</span>
+          <input class="form-control" id="plan-ref" type="text" name="plan-ref">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

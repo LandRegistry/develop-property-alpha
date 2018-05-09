@@ -16,13 +16,13 @@
       <!-- <a href="#" class="link-back">Back</a> -->
 
       <h1 class="heading-large">
-        Check your answers before submitting your development plans
+        Development plans: {{ data['estate-name'] }}
       </h1>
 
 
       <!-- only add a heading for a list if there is more than one list -->
       <h2 class="heading-medium">
-        Plan details
+        Development name
       </h2>
 
       <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
@@ -30,37 +30,41 @@
       <!--   * `cya-questions-long` for long questions -->
       <!--   * none for single group of q&a -->
       <dl class="govuk-check-your-answers cya-questions-short">
-
-<!--    need to add pages to collect development name and address     
         <div>
           <dt class="cya-question">
             Development name and address
           </dt>
           <dd class="cya-answer">
-            Westway Estate Phase 2<br />
+<!--             Westway Estate Phase 2<br />
             North Plymouth <br/>
-            PL1 2HB
-            {{ data['estate-name'] }}
-            {{ data['estate-address'] }}
+            PL1 2HB -->
+            {{ data['estate-name'] }} <br />
+            {{ data['estate-address-1'] }} <br />
+            {{ data['estate-address-2'] }}
           </dd>
           <dd class="cya-change">
             <a href="#">
               Change<span class="visually-hidden"> development name and address</span>
             </a>
           </dd>
-        </div> -->
+        </div>
+      </dl>
 
 
+      <h2 class="heading-medium">
+        Plan details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
         <div>
           <dt class="cya-question">
             Estate layout files
           </dt>
           <dd class="cya-answer">
-            westway-estate.dxf
-            <!-- {{ data['cad_uploads'] }} -->
+            {{ data['cad_uploads'] }}
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="05-upload-cad">
               Change<span class="visually-hidden"> digital layout file</span>
             </a>
           </dd>
@@ -71,11 +75,10 @@
             Prececdent deeds file
           </dt>
           <dd class="cya-answer">
-            westway-new-title-deeds.pdf
-            <!-- {{ data['deed_uploads'] }} -->
+            {{ data['deed_uploads'] }}
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="06-upload-deeds">
               Change<span class="visually-hidden"> precedent deeds</span>
             </a>
           </dd>
@@ -93,12 +96,11 @@
           <dt class="cya-question">
             Contact email
           </dt>
-          <dd class="cya-answer">
-            graham.thomas@sandersonshomes.co.uk
-            <!-- {{ data['email'] }} -->
+          <dd class="cya-answer">       
+            {{ data['email'] }}
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="07-contact-email">
               Change<span class="visually-hidden"> contact email</span>
             </a>
           </dd>
@@ -109,16 +111,14 @@
             Developer
           </dt>
           <dd class="cya-answer">
-            Sanderson Homes<br />
-            Alston Towers<br />
-            North Alerton<br />
-            Derby<br />
-            DB1 3NB
-            <!-- {{ data['dev-name'] }} -->
-            <!-- {{ data['dev-address'] }} -->
+            {{ data['dev-name'] }} <br />
+            {{ data['dev-address-1'] }} <br />
+            {{ data['dev-address-2'] }} <br />
+            {{ data['dev-address-3'] }} <br />
+            {{ data['dev-address-4'] }}
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="08-developer">
               Change<span class="visually-hidden"> developer</span>
             </a>
           </dd>
@@ -129,15 +129,13 @@
             Conveyancer
           </dt>
           <dd class="cya-answer">
-            Barrow &amp; Co Solicitors<br />
-            23 Hyde Park<br />
-            Plymouth<br />
-            <!-- {{ data['conv-name'] }} -->
-            <!-- {{ data['conv-address'] }} -->
-            PL3 2ED
+            {{ data['conv-name'] }} <br />
+            {{ data['conv-address-1'] }} <br />
+            {{ data['conv-address-2'] }} <br />
+            {{ data['conv-address-3'] }}
           </dd>
           <dd class="cya-change">
-            <a href="#">
+            <a href="09-conveyancer">
               Change<span class="visually-hidden"> conveyancer</span>
             </a>
           </dd>

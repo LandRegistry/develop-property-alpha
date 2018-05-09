@@ -1,0 +1,70 @@
+{% extends "../layout.html" %}
+
+{% block page_title %}
+  Develop land and property - Alpha
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Notifications
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row"> 
+    <div class="column-two-thirds">
+
+      <p class="lede">Notifying people of important events</p>
+
+
+      <p>These pages show how we could notify people on important events</p>
+
+      <p>Managing by excepttion: we want to only nofity people when there is a problem - for example if a plan is incapable of registration.</p>
+
+      <p>There are probably other important events, that should trigger a notification - that are not problems - like your plan check was successful.  Perhaps also - the plots have been surveyed.</p>
+
+      <p>Notifications, shown here are emails, but they could be other delivery mechanisms for example an API, RSS feed, etc.
+
+
+      <h2 class="heading-large">Example notifications<span class="heading-secondary">Version 1, Wed, 9th May</span></h2>
+
+      <ul class="list-bullet">
+        <li><a href="notifications/v1/plan-good">plans checked - everything ok </a></li>
+        <li><a href="notifications/v1/plan-problem-plot">plans checked - problem with plot 1</a></li>
+      </ul>
+
+
+      <hr>
+      
+      <h2 class="heading-large">Feedback - yes please</h2>    
+      <p><a href="mailto:newbuildsresearch@landregistry.gov.uk?Subject=Prototype - notifications" target="_top">email us your feedback</a></p>
+
+
+    </div>
+
+<!--     <div class="column-one-third">
+
+      <div class="supplementary-panel">
+
+        <h2 class="heading-medium">Made from</h2>
+        <ul class="list-bullet">
+          <li><span class="bold"><a href="check-my-plans/initial-check">Check my estate plan</a></span> - version 1
+          </li>
+        </ul>
+
+      </div>   -->
+      <!-- end panel -->
+
+    </div>  <!-- end column third -->
+
+  </div>
+</main>
+
+{% endblock %}
+
+
