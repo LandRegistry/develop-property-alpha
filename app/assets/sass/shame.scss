@@ -198,10 +198,39 @@ img.map {
   padding-top: 3px;
 }
 
+.float-lozange {
+  float: left;
+  width: 50%
+}
+
 .green {
   background-color: #00823B;
 }
 
 .orange {
   background-color: #FFBF47;
+}
+
+.red {
+  background-color: #B10E1E;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+//draft-title
+.draft-title {
+  background-color: #005EA5;
+  margin-top:45px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.draft-title-box {
+    background-color:  #FFFFFF;
+    margin-top:45px;
+    margin-bottom:45px;
+    color: #0B0C0C;
+    text-align: left;
 }
