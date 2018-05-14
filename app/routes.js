@@ -79,9 +79,10 @@ router.get('/check-my-plans/update-check/v1/03-get-my-plans', function (req, res
   }
 })
 
-// set-up default data for 
 
-router.get('/check-my-plans/update-check/v1/04-development-info', function (req, res) {
+// set-up default data for submitted development
+
+router.get('/check-my-plans/update-check/v1/03b-setup-information', function (req, res) {
   // set up default data for submitted development
 
   req.session.data['estate-name'] = "Westway Estate Phase 2";
@@ -100,8 +101,8 @@ router.get('/check-my-plans/update-check/v1/04-development-info', function (req,
   req.session.data['conv-address-2'] = "Plymouth";
   req.session.data['conv-address-3'] = "PL3 2ED";
 
-  // render page
-  res.render('check-my-plans/update-check/v1/04-development-info')
+  // redirect to see your saved information for your development page
+  res.redirect('/check-my-plans/update-check/v1/04-development-info')
 
 })
 
