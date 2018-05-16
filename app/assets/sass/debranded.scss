@@ -1,0 +1,64 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// If you need to create a page as part of your journey, but without GOV.UK branding
+// See localhost:3000/examples/unbranded/
+
+// Override the govuk_frontend_toolkit's font stack
+// https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_font_stack.scss#L13
+$toolkit-font-stack: $helvetica-regular;
+
+.unbranded {
+  // background: $white;
+  background-color: rgb(254, 249, 245);
+
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+
+    font-family: $toolkit-font-stack !important;
+  }
+
+  body {
+    background-color: rgb(254, 249, 245);
+  }
+
+  hr {
+
+  }
+
+  // Remove GOV.UK footer styles
+  #footer {
+    // border: 0;
+    // background: $white;
+    background-color: rgba(51, 51, 51, 0.0470588);
+  }
+
+  #footer .footer-wrapper {
+    background-color: transparent;
+  }
+
+  #footer .footer-meta {
+    padding-bottom:0;
+  }
+
+
+  // Change GOV.UK header/banner style
+  #global-header {
+    // border-bottom: 1px black;
+    // background: $white;
+    background-color: #005EA5;
+  }
+
+  #global-header .header-wrapper {
+    // border-bottom: 1px black;
+    // background: $white;
+    background-color: #005EA5;
+  }
+
+
+}
