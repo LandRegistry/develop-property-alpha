@@ -49,15 +49,19 @@ $toolkit-font-stack: $helvetica-regular;
 
   // Change GOV.UK header/banner style
   #global-header {
-    // border-bottom: 1px black;
-    // background: $white;
+    border-bottom-width: 2px;
+    border-bottom-color: #a1acb2;
+    border-bottom-style: solid;
     background-color: #005EA5;
   }
 
   #global-header .header-wrapper {
-    // border-bottom: 1px black;
-    // background: $white;
     background-color: #005EA5;
+    padding-bottom:25px;
+  }
+
+  #global-header .header-proposition a.menu {
+    display:none;
   }
 
 
