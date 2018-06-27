@@ -177,6 +177,11 @@ img.map {
 	margin-top:60px;
 }
 
+.registrability-panel2 {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
 //.estate-location
 .estate-location {
     margin-top:45px;
@@ -199,6 +204,24 @@ img.map {
 }
 
 .float-lozange {
+  float: left;
+
+}
+
+
+//'lozange' highlighting
+.lozenge {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight:800;
+  vertical-align: baseline;
+  // text-transform: uppercase;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.float-lozenge {
   float: left;
 
 }
