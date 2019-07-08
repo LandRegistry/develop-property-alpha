@@ -2,6 +2,10 @@
 
 Protoypes of, and thinking about, Services and User Journeys for Developing, selling, and buying 'new build' homes in England and Wales.
 
+THIS WORK IS NOT CURRENT - PROJECT and BETA SERVICE ENDED JULY 2019
+
+This prototype led to the private beta work, prototpyed here: [develop property ready to sell](https://github.com/LandRegistry/develop-property-ready-to-sell)
+
 
 ## Developing land and properties
 
