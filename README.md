@@ -4,7 +4,7 @@ Protoypes of, and thinking about, Services and User Journeys for Developing, sel
 
 THIS WORK IS NOT CURRENT - PROJECT and BETA SERVICE ENDED JULY 2019
 
-This prototype led to the private beta work, prototpyed here: [develop property ready to sell](https://github.com/LandRegistry/develop-property-ready-to-sell)
+This prototype led to the private beta work, prototyped here: [develop property ready to sell](https://github.com/LandRegistry/develop-property-ready-to-sell)
 
 
 ## Developing land and properties
